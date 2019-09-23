@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BibliotecaVirtual</title>
+    <!-- Estilos-->
+    <link rel="stylesheet" href="CSS/EstilosContacto.css">
+    <!--Iconos de Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Tipos de Fuentes de Letras -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Playfair+Display|Sofia&display=swap" rel="stylesheet">
+
+    
+    
+</head>
+<body>
+  
+        <header>
+          <div>
+            <a href="inicio.html" id="Logo"><img src="CSS/Imagenes/libro.png" alt="Logo-BibliotecaVirtual"></a>
+            <h3 id="NombreLogo">Biblioteca Virtual</h3>
+            <nav>
+              <a href="#" id="menu-icono">
+                <i class="fa fa-bars"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="inicio.html">
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="Populares.html">
+                    Populares
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Peticiones
+                  </a>
+                </li>
+                <li>
+                  <a href="Contacto.html">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      
+  
+       
+        <form class="Formulario" action="contacto.html" method="post">
+            <h1>Contacto</h1>
+            <input type="text" id="rut" name="rut" minlength="3" maxlength="15" placeholder="Rut *" size="40" onblur="validarRut()">
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="10" placeholder="Nombre *" size="40" onblur="validarNombre()">
+            <input type="text" id="apellido" name="Apellido" minlength="3" maxlength="10" placeholder="Apellido *" size="40" onblur="validarApellido()">
+            <input type="email" id="mail" name="mail" placeholder="E-mail *" size="40" onblur="validarCorreo()">
+            <input type="number" id="telefono" name="telefono" placeholder="Teléfono" step="1">
+            <textarea rows="3" cols="38" placeholder="Mensaje"></textarea>
+            <input class="boton" type="submit" value="Contactar" onclick="validarFormulario()">
+          </form>
+      
+  
+
+         <!-- FOOTER -->
+  <footer>
+   
+      <div class="icono-texto">
+        <div class="icono-texto-icono">
+          <ul class="footer-nav">
+            <li>
+              <a href="inicio.html">Inicio</a>
+          </li>
+          <li>
+              <a href="Populares.html">Populares</a>
+          </li>
+          <li>
+              <a href="Peticiones">Peticiones</a>
+          </li>
+          <li>
+              <a href="Contacto.html">Contacto</a>
+          </li>
+          </ul>
+        </div>
+        <div class="icono-texto-texto">
+          <ul class="social">
+            <li>
+              <a href="http://www.duoc.cl/inicio" target="_blank">
+                  <i class="fa fa-envelope-o"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.facebook.com/DuocUC/" target="_blank">
+                  <i class="fa fa-facebook"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://twitter.com/DuocUC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                  <i class="fa fa-twitter"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.youtube.com/user/DuocUCvideos" target="_blank">
+                  <i class="fa fa-youtube"></i>
+              </a>
+          </li>
+          <li>
+              <a href="https://www.instagram.com/duocuc_cl/?hl=es">
+                  <i class="fa fa-instagram"></i>
+              </a>
+          </li>
+          </ul>
+        </div>
+      </div>
+  
+  
+  </footer>
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

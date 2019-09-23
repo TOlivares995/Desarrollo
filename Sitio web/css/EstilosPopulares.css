@@ -1,0 +1,292 @@
+/*Estructura General*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /*Fondo*/
+  body {
+    background-image: url(imagenes/libreria.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    margin: 0 auto;
+  }
+  /*Parrafos*/
+  p {
+    color: #ffffff;
+    font-size: 100%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+    font-family: 'Courgette', cursive;
+  }
+  /*Titulos*/
+  h3 {
+    font-size: 135%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    font-family: 'Sofia', cursive;
+  }
+  /*Titulos Secundarios*/
+  h2{
+    font-family: 'Sofia', cursive;
+    font-size: 165%;
+  }
+  /*Links*/
+  a {
+    color: #524c56;
+    text-decoration: none;
+    font-weight: bold;
+    transition:all 0.2s;
+  }
+  /*Efecto links*/
+  a:hover {
+    color: #3a7999;
+  }
+  
+  /*Espacio asignado al cuerpo*/
+  #Contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /*Cabecera*/
+  header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: rgba(7, 5, 36, 0.8);
+  }
+  /*Logo*/
+  header #Logo img {
+    margin: 20px;
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #NombreLogo {
+    float: left;
+    padding: 25px 20px 0 0;
+    color: #fff;
+    font-size: 170%;
+  }
+  
+  /*Menu Superior*/
+  nav {
+    float: right;
+    padding: 25px 20px 0px 0px;
+  }
+  
+  #menu-icono {
+    display: none;
+    font-size: 50px;
+  }
+  /*Estilo menu*/
+  ul {
+    list-style: none;
+  }
+  /*Estructura Menu superior*/
+  nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Sofia', cursive;
+  }
+  
+  /*Color del menu superior*/
+  nav ul li a {
+    color: #ffffff;
+  }
+  
+  /*Efecto Color del menu superior*/
+  
+  a:hover {
+    color: #41a1b3; 
+  }
+
+  
+  /*Contenedor Seccion Libros*/
+  .Populares{
+    float:left;
+    margin-left: 25px;
+    color: #FFF;
+    font-family: 'Merriweather', serif; 
+  }
+  /*Imagenes*/
+  .Populares img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 250px;
+    margin-bottom: -4px;
+    
+  }
+  /*Seccion Libros*/
+  .PrimeraLinea {
+   width: 87%;
+   clear: both;
+   text-align:center;
+   border:1px solid #ccc;
+   float:left;
+   margin:5px 1%;
+   padding:10px 2% 15px;
+   position:relative;
+   background-color:rgba(0, 0, 0,0.8);
+   box-sizing:content-box;
+   height: 500px;
+   box-shadow:0 0 3px #000000;
+   transform: scale(1);
+   transition: background-color 1s, box-shadow 1s, transform 0.5s;
+  }
+  .PrimeraLinea:hover{
+   background-color:#000000;
+   z-index:10;
+   box-shadow:0 0 15px #333;
+   transform: scale(1.1);
+  }
+  .SegundaLinea{
+   width: 87%;
+   float: left;
+   margin:5px 1%;
+   padding:10px 2% 15px;
+   border:1px solid #ccc;
+   position:relative;
+   background-color:rgba(0, 0, 0,0.8);
+   box-sizing:content-box;
+   height: 500px;
+   box-shadow:0 0 3px #000000;
+   transform: scale(1);
+   transition: background-color 1s, box-shadow 1s, transform 0.5s;
+  }
+  .SegundaLinea:hover{
+   background-color:#000000;
+   z-index:10;
+   box-shadow:0 0 15px #333;
+   transform: scale(1.1);
+  }    
+  .TerceraLinea{
+   width: 87%;
+   float: left;
+   background-color:rgba(0, 0, 0,0.8);
+   border:1px solid #ccc;
+   margin:5px 1% 10%;
+   padding:10px 2% 15px;
+   box-sizing:content-box;
+   height: 500px;
+   box-shadow:0 0 3px #000000;
+   transform: scale(1);
+   transition: background-color 1s, box-shadow 1s, transform 0.5s;
+  }
+  
+  .TerceraLinea:hover{
+   background-color:#000000;
+   transform: scale(1.1);
+  }
+  
+  
+  /*Pie de pagina*/
+  footer {
+    background: rgba(7, 5, 36, 0.8);
+    position: relative;
+    height: 120px;
+    width: 100%;
+    clear: both;
+  }
+  /*Posicion pie de pagina*/
+  
+  .icono-texto {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .icono-texto-icono {
+    float: left;
+    width: 20%;
+  }
+  /*Posicion iconos inferior*/
+  .icono-texto-texto {
+    float: right;
+    width: 60%;
+    padding: 25px 20px 0 0;
+  }
+  /*posicion menu inferior*/
+  .footer-nav {
+    text-align: right;
+  }
+  /*menu inferior*/
+  .footer-nav a {
+    font-size: 110%;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Sofia', cursive;
+  }
+  /*menu inferior efecto*/
+  .footer-nav a:hover {
+    color: #41a1b3;;
+  }
+  /*Posicion iconos inferior*/
+  .social {
+    text-align: right;  
+  }
+  /*Posicion iconos inferior*/
+  .social li {
+    display: inline;  
+    border-radius: 50%;
+    background: #FFF;  
+  }
+  /*Tamaño iconos inferior*/
+  .social i {
+    font-size: 250%;
+    margin: 1%;
+    padding: 1%;
+    color: #9c9494;
+    float: right;
+    transition: all .5s;
+  }
+  
+  /*efectos iconos inferior*/
+  .social i:hover {
+    color: #41a1b3;   
+  }
+  
+  
+  
+  @media screen and (max-width: 950px) {
+  
+    #menu-icono {
+        display: inline;
+        position: absolute; 
+        top: 20px; 
+        right:20px;
+        font-size: 40px;
+    }
+  
+    nav:hover ul {
+        display: block;
+    }
+  
+    nav ul,a:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 10px;
+        background: #000000cc;
+        border: 1px solid #a5bdcd;
+        right: 20px;
+        width: 30%;
+        font-size: 80%;
+    }
+    
+    #NombreLogo{
+        font-size: 140%;
+    }
+}
+    

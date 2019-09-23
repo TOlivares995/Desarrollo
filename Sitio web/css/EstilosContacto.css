@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /*Fondo*/
+  body {
+    background-image: url(imagenes/libreria.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    margin: 0 auto;
+  }
+  /*Parrafos*/
+
+  /*Titulos*/
+  h3 {
+    font-size: 135%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    font-family: 'Sofia', cursive;
+  }
+  
+  /*Links*/
+  a {
+    color: #524c56;
+    text-decoration: none;
+    font-weight: bold;
+    transition:all 0.2s;
+  }
+  /*Efecto links*/
+  a:hover {
+    color: #3a7999;
+  }
+  
+
+  
+  /*Cabecera*/
+  header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: rgba(7, 5, 36, 0.8);
+  }
+  /*Logo*/
+  header #Logo img {
+    margin: 20px;
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #NombreLogo {
+    float: left;
+    padding: 25px 20px 0 0;
+    color: #fff;
+    font-size: 170%;
+  }
+  
+  /*Menu Superior*/
+  nav {
+    float: right;
+    padding: 25px 20px 0px 0px;
+  }
+  
+  #menu-icono {
+    display: none;
+    font-size: 50px;
+  }
+  /*Estilo menu*/
+  ul {
+    list-style: none;
+  }
+  /*Estructura Menu superior*/
+  nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Sofia', cursive;
+  }
+  
+  /*Color del menu superior*/
+  nav ul li a {
+    color: #ffffff;
+  }
+
+
+.Formulario{
+    background: rgba(0, 0, 0, 0.9);
+    margin:0 auto;
+    margin-bottom:50px; 
+    margin-top: 50px;
+    padding: 3px;
+    width:50%;
+    border-radius: 30px;
+}
+h1{
+    text-align: left;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Sofia', cursive;
+    margin-left: 20px;
+}
+
+  .Formulario input[type = "text"],.Formulario input[type = "email"],.Formulario input[type = "number"]{
+    border:0;
+    background: none;
+    display: block;
+    margin-left: 10px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #41a1b3   ;
+    padding: 14px 10px;
+    width: 60%;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+  }
+  .Formulario input[type = "text"]:focus,.Formulario input[type = "email"]:focus, .Formulario input[type = "number"]:focus{
+   
+    border-color: #ffffff;
+  }
+  .Formulario textarea{
+    border:0;
+    background: none;
+    display: block;
+    margin-left: 0px;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #41a1b3   ;
+    padding: 14px 10px;
+    width: 80%;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+  }
+  .Formulario textarea:focus{
+   
+    border-color: #ffffff;
+    
+  }
+  
+
+  .Formulario input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #41a1b3; ;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .Formulario input[type = "submit"]:hover{
+    color: #41a1b3; 
+  }
+  
+
+/*Pie de pagina*/
+footer {
+    background: rgba(7, 5, 36, 0.8);
+    position: relative;
+    height: 120px;
+    width: 100%;
+    clear: both;
+  }
+  /*Posicion pie de pagina*/
+  
+  .icono-texto {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .icono-texto-icono {
+    float: left;
+    width: 20%;
+  }
+  /*Posicion iconos inferior*/
+  .icono-texto-texto {
+    float: right;
+    width: 60%;
+    padding: 25px 20px 0 0;
+  }
+  /*posicion menu inferior*/
+  .footer-nav {
+    text-align: right;
+  }
+  /*menu inferior*/
+  .footer-nav a {
+    font-size: 110%;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Sofia', cursive;
+  }
+  /*menu inferior efecto*/
+  .footer-nav a:hover {
+    color: #41a1b3;;
+  }
+  /*Posicion iconos inferior*/
+  .social {
+    text-align: right;  
+  }
+  /*Posicion iconos inferior*/
+  .social li {
+    display: inline;  
+    border-radius: 50%;
+    background: #FFF;  
+  }
+  /*Tamaño iconos inferior*/
+  .social i {
+    font-size: 250%;
+    margin: 1%;
+    padding: 1%;
+    color: #9c9494;
+    float: right;
+    transition: all .5s;
+  }
+  
+  /*efectos iconos inferior*/
+  .social i:hover {
+    color: #41a1b3;   
+  }
+  
+  
+@media(max-width:950px)
+{
+
+    #menu-icono {
+        display: inline;
+        position: absolute; 
+        top: 20px; 
+        right:20px;
+        font-size: 40px;
+    }
+  
+    nav:hover ul {
+        display: block;
+    }
+  
+    nav ul,a:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 10px;
+        background: rgba(0, 0, 0,0.8);
+        border: 1px solid #a5bdcd;
+        right: 20px;
+        width: 30%;
+        font-size: 80%;
+    }
+    
+    #NombreLogo{
+        font-size: 140%;
+    }
+  }
+
+
+
+
