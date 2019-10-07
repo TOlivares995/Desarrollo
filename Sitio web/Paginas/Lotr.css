@@ -5,31 +5,20 @@
   }
   /*Fondo*/
   body {
-    background-image: url(CSS/imagenes/libreria.jpg);
+    background-image: url(ImagenPagina/libreria.jpg);
     background-repeat: no-repeat; 
     background-size: 100% 100%;
     background-attachment: fixed; 
     margin: 0 auto;
   }
 
-   /*Parrafos*/
-   p {
-    color: #ffffff;
-    font-size: 100%;
-    line-height: 155%;
-    padding: 3%;
-    text-indent: 2%;
-    text-align: justify;
-    font-family: 'Courgette', cursive;
-  }
-
   /*Titulos*/
   h3 {
+    float: right;
     font-size: 135%;
     line-height: 155%;
     font-weight: 500;
     color: #ffffff;
-    text-align: center;
     text-transform: uppercase;
     padding: 0;
     font-family: 'Sofia', cursive;
@@ -39,6 +28,10 @@
   h2{
     font-family: 'Sofia', cursive;
     font-size: 165%;
+    margin-right: 500px;
+    color: #ffffff;
+    float: right;
+    margin-top: 50px;
   }
   
   /*Links*/
@@ -61,7 +54,7 @@
     left: 0;
     background: rgba(7, 5, 36, 0.8);
   }
-  
+
    /*Logo*/
    header #Logo img {
     margin: 20px;
@@ -109,6 +102,32 @@
   a:hover {
     color: #41a1b3; 
   }
+
+#imagen{
+  width: 30%;
+  height: 20px;
+  margin: 50px 0 0 100px;
+  float: left;
+  }
+
+img{
+  height: 500px;
+  width: 100%;
+  float: left;
+}
+
+.caja{
+margin-left:600px;
+}
+p{
+  float: right;
+  color: #ffffff;
+  font-size: 150%;
+  line-height: 100%;
+  text-align: justify;
+  font-family: 'Courgette', cursive;
+  margin-top: 50px;
+}
 
   @media screen and (max-width: 950px) {
   
