@@ -11,8 +11,29 @@
     background-attachment: fixed; 
     margin: 0 auto;
   }
-  /*Parrafos*/
 
+  /*Flecha*/
+
+  #btntop{
+    position: fixed;
+  font-size: 30px;
+  bottom: 120px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  background: rgba(15, 15, 15, 0.8);
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  }
+  #btntop :hover{
+    color: #255784;
+    background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+  transition-delay: 0,2s;
+  }
   /*Titulos*/
   h3 {
     font-size: 135%;
@@ -24,7 +45,7 @@
     padding: 0;
     font-family: 'Sofia', cursive;
   }
-  
+
   /*Links*/
   a {
     color: #524c56;
@@ -45,7 +66,7 @@
     height: 100px;
     top: 0;
     left: 0;
-    background: rgba(7, 5, 36, 0.8);
+    background: rgba(15, 15, 15, 0.8);
   }
   /*Logo*/
   header #Logo img {
@@ -168,13 +189,18 @@ h1{
     font-size: 15px;
   }
   .Formulario input[type = "submit"]:hover{
-    color: #41a1b3; 
+    color: #255784;
+  background: #2196f3;
+box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+transition-delay: 0,2s;
+text-decoration-color: #000000;
+
   }
   
 
 /*Pie de pagina*/
 footer {
-    background: rgba(7, 5, 36, 0.8);
+  background: rgba(15, 15, 15, 0.8);
     position: relative;
     height: 120px;
     width: 100%;
@@ -191,17 +217,6 @@ footer {
     float: left;
     width: 20%;
   }
-  /*Posicion iconos inferior*/
-  .icono-texto-texto {
-    float: right;
-    width: 60%;
-    padding: 25px 20px 0 0;
-  }
-  /*posicion menu inferior*/
-  .footer-nav {
-    text-align: right;
-  }
-  /*menu inferior*/
   .footer-nav a {
     font-size: 110%;
     color: #ffffff;
@@ -212,29 +227,48 @@ footer {
   .footer-nav a:hover {
     color: #41a1b3;;
   }
-  /*Posicion iconos inferior*/
-  .social {
-    text-align: right;  
-  }
-  /*Posicion iconos inferior*/
-  .social li {
-    display: inline;  
-    border-radius: 50%;
-    background: #FFF;  
-  }
-  /*Tamaño iconos inferior*/
-  .social i {
-    font-size: 250%;
-    margin: 1%;
-    padding: 1%;
-    color: #9c9494;
-    float: right;
-    transition: all .5s;
+  /*posicion menu inferior*/
+  .footer-nav {
+    text-align: right;
   }
   
-  /*efectos iconos inferior*/
-  .social i:hover {
-    color: #41a1b3;   
+  .barra-social{
+    position: fixed;
+    right: 0;
+    top:35%;
+    font-size: 1,5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  
+  }
+  .icon{
+    color: #FFF;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+    z-index: 100;
+  }
+  
+  .icon-facebook2 {
+    background: #1a2742;
+    border-radius: 1rem;
+  }
+  .icon-twitter{
+    background: #005374;
+  }
+  .icon-youtube{
+    background: #721c1a;
+  }
+  .icon-instagram{
+    background: #254158;
+    border-radius: 1rem;
+  }
+  .icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .42)
   }
   
   
