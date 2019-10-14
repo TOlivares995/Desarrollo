@@ -1,10 +1,13 @@
 {% extends 'blog/base.html' %}
 
-{% block content %} <!-- Inicio del block-->
+{% block content %}
+<!-- Inicio del block-->
 
-    <body>
-        <h1>Lista de Posts</h1>
-        {{Posts}}
-    </body>
+<body>
+    <h1>Lista de Posts</h1>
+    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+    {{Posts}}
+</body>
 
-{% endblock %} <!-- fin del block-->
+{% endblock %}
+<!-- fin del block-->
