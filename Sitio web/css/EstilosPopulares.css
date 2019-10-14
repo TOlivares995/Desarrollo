@@ -12,6 +12,28 @@
     background-attachment: fixed; 
     margin: 0 auto;
   }
+  /*Flecha*/
+
+
+  /*Flecha*/
+
+  #btntop{
+    position: fixed;
+  font-size: 30px;
+  bottom: 120px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  background: rgba(15, 15, 15, 0.8);
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  }
+  #btntop :hover{
+    color:#41a1b3;
+  }
   /*Parrafos*/
   p {
     color: #ffffff;
@@ -62,7 +84,7 @@
     height: 100px;
     top: 0;
     left: 0;
-    background: rgba(7, 5, 36, 0.8);
+    background: rgba(15, 15, 15, 0.8);
   }
   /*Logo*/
   header #Logo img {
@@ -131,70 +153,112 @@
   }
   /*Seccion Libros*/
   .PrimeraLinea {
-   width: 87%;
-   clear: both;
-   text-align:center;
-   border:1px solid #ccc;
-   float:left;
-   margin:5px 1%;
-   padding:10px 2% 15px;
-   position:relative;
-   background-color:rgba(0, 0, 0,0.8);
-   box-sizing:content-box;
-   height: 500px;
-   box-shadow:0 0 3px #000000;
-   transform: scale(1);
-   transition: background-color 1s, box-shadow 1s, transform 0.5s;
-  }
-  .PrimeraLinea:hover{
-   background-color:#000000;
-   z-index:10;
-   box-shadow:0 0 15px #333;
-   transform: scale(1.1);
-  }
-  .SegundaLinea{
-   width: 87%;
-   float: left;
-   margin:5px 1%;
-   padding:10px 2% 15px;
-   border:1px solid #ccc;
-   position:relative;
-   background-color:rgba(0, 0, 0,0.8);
-   box-sizing:content-box;
-   height: 500px;
-   box-shadow:0 0 3px #000000;
-   transform: scale(1);
-   transition: background-color 1s, box-shadow 1s, transform 0.5s;
-  }
-  .SegundaLinea:hover{
-   background-color:#000000;
-   z-index:10;
-   box-shadow:0 0 15px #333;
-   transform: scale(1.1);
-  }    
-  .TerceraLinea{
-   width: 87%;
-   float: left;
-   background-color:rgba(0, 0, 0,0.8);
-   border:1px solid #ccc;
-   margin:5px 1% 10%;
-   padding:10px 2% 15px;
-   box-sizing:content-box;
-   height: 500px;
-   box-shadow:0 0 3px #000000;
-   transform: scale(1);
-   transition: background-color 1s, box-shadow 1s, transform 0.5s;
-  }
-  
-  .TerceraLinea:hover{
-   background-color:#000000;
-   transform: scale(1.1);
-  }
+    width: 87%;
+    clear: both;
+    text-align:center;
+    float:left;
+    margin:22px 1% 44px;
+    padding:10px 2% 15px;
+    position:relative;
+    background-color:rgba(0, 0, 0,0.8);
+    box-sizing:content-box;
+    height: 500px;
+    box-shadow:0 0 3px #000000;
+   
+   }
+   
+    .PrimeraLinea img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width:100%;
+     height: 100%;
+     object-fit: fill;
+     -webkit-clip-path:polygon(0 0,100% 0 ,100% 100%, 0% 100%);
+     clip-path:polygon(0 0,100% 0,100%,0% 100%);
+     transition: 1s;
+   }
+   .PrimeraLinea:hover img{
+     -webkit-clip-path:polygon(0 0,100% 0 ,0% 0%, 0% 100%);
+     clip-path:polygon(0 0,100% 0,0%,0% 100%);
+   }
+   
+   .Contenido a{
+     display: inline-block;
+     margin-top: 10px;
+     padding: 10px 20px;
+     border: 1px solid #fff;
+     text-decoration: none;
+     color: #fff;
+     transition: 0.5s;
+   }
+   .Contenido a:hover{
+     color: #000;
+     background: #fff;
+   }
+   
+   .SegundaLinea{
+    width: 87%;
+    float: left;
+    margin:22px 1% 44px;
+    padding:10px 2% 15px;
+    text-align:center;
+    position:relative;
+    background-color:rgba(0, 0, 0,0.8);
+    box-sizing:content-box;
+    height: 500px;
+    box-shadow:0 0 3px #000000;
+   }
+   
+    .SegundaLinea img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width:100%;
+     height: 100%;
+     object-fit: fill;
+     -webkit-clip-path:polygon(0 0,100% 0 ,100% 100%, 0% 100%);
+     clip-path:polygon(0 0,100% 0,100%,0% 100%);
+     transition: 1s;
+   }
+   .SegundaLinea:hover img{
+     -webkit-clip-path:polygon(0 0,100% 0 ,0% 0%, 0% 100%);
+     clip-path:polygon(0 0,100% 0,0%,0% 100%);
+   }    
+   .TerceraLinea{
+     width: 87%;
+     clear: both;
+     text-align:center;
+     float:left;
+     margin:22px 1% 44px;
+     padding:10px 2% 15px;
+     position:relative;
+     background-color:rgba(0, 0, 0,0.8);
+     box-sizing:content-box;
+     height: 500px;
+     box-shadow:0 0 3px #000000;
+   }
+   
+    .TerceraLinea img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width:100%;
+     height: 100%;
+     object-fit: fill;
+     -webkit-clip-path:polygon(0 0,100% 0 ,100% 100%, 0% 100%);
+     clip-path:polygon(0 0,100% 0,100%,0% 100%);
+     transition: 1s;
+   }
+   .TerceraLinea:hover img{
+     -webkit-clip-path:polygon(0 0,100% 0 ,0% 0%, 0% 100%);
+     clip-path:polygon(0 0,100% 0,0%,0% 100%);
+   }
   
   
   /*Pie de pagina*/
   footer {
-    background: rgba(7, 5, 36, 0.8);
+    background: rgba(15, 15, 15, 0.8);
     position: relative;
     height: 120px;
     width: 100%;
@@ -211,17 +275,6 @@
     float: left;
     width: 20%;
   }
-  /*Posicion iconos inferior*/
-  .icono-texto-texto {
-    float: right;
-    width: 60%;
-    padding: 25px 20px 0 0;
-  }
-  /*posicion menu inferior*/
-  .footer-nav {
-    text-align: right;
-  }
-  /*menu inferior*/
   .footer-nav a {
     font-size: 110%;
     color: #ffffff;
@@ -232,35 +285,55 @@
   .footer-nav a:hover {
     color: #41a1b3;;
   }
-  /*Posicion iconos inferior*/
-  .social {
-    text-align: right;  
+  /*posicion menu inferior*/
+  .footer-nav {
+    text-align: right;
   }
-  /*Posicion iconos inferior*/
-  .social li {
-    display: inline;  
-    border-radius: 50%;
-    background: #FFF;  
+  
+  .barra-social{
+    position: fixed;
+    right: 0;
+    top:35%;
+    font-size: 1,5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  
   }
-  /*Tamaño iconos inferior*/
-  .social i {
-    font-size: 250%;
-    margin: 1%;
-    padding: 1%;
-    color: #9c9494;
-    float: right;
+  .icon{
+    color: #FFF;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
     transition: all .5s;
+    z-index: 100;
   }
   
-  /*efectos iconos inferior*/
-  .social i:hover {
-    color: #41a1b3;   
+  .icon-facebook2 {
+    background: #1a2742;
+    border-radius: 1rem;
   }
-  
+  .icon-twitter{
+    background: #005374;
+  }
+  .icon-youtube{
+    background: #721c1a;
+  }
+  .icon-instagram{
+    background: #254158;
+    border-radius: 1rem;
+  }
+  .icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .42)
+  }
+
+
   
   
   @media screen and (max-width: 950px) {
-  
+
     #menu-icono {
         display: inline;
         position: absolute; 
@@ -278,7 +351,7 @@
         z-index: 1000;
         position: absolute;
         padding: 10px;
-        background: #000000cc;
+        background: rgba(0, 0, 0,0.8);
         border: 1px solid #a5bdcd;
         right: 20px;
         width: 30%;
@@ -288,5 +361,13 @@
     #NombreLogo{
         font-size: 140%;
     }
-}
-    
+  
+    .barra-social{
+      font-size: 10px;
+    }
+    #btntop{
+      font-size: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
