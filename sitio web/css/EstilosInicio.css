@@ -1,0 +1,393 @@
+/*Estructura General*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+/*Fondo*/
+body {
+  background-image: url(imagenes/libreria.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  background-attachment: fixed; 
+  margin: 0 auto;
+  
+}
+/*Flecha*/
+
+#btntop{
+border-radius: 1 rem;
+position: fixed;
+font-size: 30px;
+bottom: 120px;
+right: 0px;
+width: 50px;
+height: 50px;
+background: rgba(15, 15, 15, 0.8);
+color: #FFF;
+border: none;
+cursor: pointer;
+display: none;
+z-index: 1;
+}
+
+/*Parrafos*/
+p {
+  color: #ffffff;
+  font-size: 100%;
+  line-height: 155%;
+  padding: 3%;
+  text-indent: 2%;
+  text-align: justify;
+  font-family: 'Courgette', cursive;
+}
+/*Titulos*/
+h3 {
+  font-size: 135%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  font-family: 'Sofia', cursive;
+}
+/*Titulos Secundarios*/
+h2{
+  font-family: 'Sofia', cursive;
+  font-size: 165%;
+}
+/*Links*/
+a {
+  color: #524c56;
+  text-decoration: none;
+  font-weight: bold;
+  transition:all 0.2s;
+}
+/*Efecto links*/
+a:hover {
+  color: #3a7999;
+}
+
+/*Espacio asignado al cuerpo*/
+#Contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Cabecera*/
+header {
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background: rgba(15, 15, 15, 0.8);
+}
+/*Logo*/
+header #Logo img {
+  margin: 20px;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+#NombreLogo {
+  float: left;
+  padding: 25px 20px 0 0;
+  color: #fff;
+  font-size: 170%;
+}
+
+/*Menu Superior*/
+nav {
+  float: right;
+  padding: 25px 20px 0px 0px;
+}
+
+#menu-icono {
+  display: none;
+  font-size: 50px;
+}
+/*Estilo menu*/
+ul {
+  list-style: none;
+}
+/*Estructura Menu superior*/
+nav ul li {
+  font-size: 150%;
+  display: inline-block;
+  padding: 10px;
+  font-family: 'Sofia', cursive;
+}
+
+/*Color del menu superior*/
+nav ul li a {
+  color: #ffffff;
+}
+
+/*Contenedor slider*/
+.slider {
+ width: 95%;
+ margin : auto;
+
+ overflow:hidden;
+}
+
+.slider ul{
+  display: flex;
+  padding: 0px;
+  width: 300%;
+  animation: cambio 20s infinite,alternate;
+  
+}
+.slider li{
+  list-style: none;
+  width: 100%;
+  
+}
+/*Imagenes slider*/
+.slider img {
+  width: 100%;
+  height: 400px;
+}
+@keyframes cambio{
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  75% {margin-left: -200%;}
+}
+
+
+/*Contenedor Seccion Libros*/
+.Populares{
+  float:left;
+  margin-left: 25px;
+  color: #FFF;
+  font-family: 'Merriweather', serif; 
+}
+/*Imagenes*/
+.Populares img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 250px;
+  margin-bottom: -4px;
+  
+}
+/*Seccion Libros*/
+.PrimeraLinea {
+ width: 87%;
+ clear: both;
+ text-align:center;
+ float:left;
+ margin:22px 1% 44px;
+ padding:10px 2% 15px;
+ position:relative;
+ background-color:rgba(0, 0, 0,0.8);
+ box-sizing:content-box;
+ height: 500px;
+ box-shadow:0 0 3px #000000;
+
+}
+
+ .PrimeraLinea img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: fill;
+  -webkit-clip-path:polygon(0 0,100% 0 ,100% 100%, 0% 100%);
+  clip-path:polygon(0 0,100% 0,100%,0% 100%);
+  transition: 1s;
+}
+.PrimeraLinea:hover img{
+  -webkit-clip-path:polygon(0 0,100% 0 ,0% 0%, 0% 100%);
+  clip-path:polygon(0 0,100% 0,0%,0% 100%);
+}
+
+.Contenido a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.Contenido a:hover{
+  color: #000;
+  background: #fff;
+}
+
+.SegundaLinea{
+ width: 87%;
+ float: left;
+ margin:22px 1% 44px;
+ padding:10px 2% 15px;
+ text-align:center;
+ position:relative;
+ background-color:rgba(0, 0, 0,0.8);
+ box-sizing:content-box;
+ height: 500px;
+ box-shadow:0 0 3px #000000;
+}
+
+ .SegundaLinea img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: fill;
+  -webkit-clip-path:polygon(0 0,100% 0 ,100% 100%, 0% 100%);
+  clip-path:polygon(0 0,100% 0,100%,0% 100%);
+  transition: 1s;
+}
+.SegundaLinea:hover img{
+  -webkit-clip-path:polygon(0 0,100% 0 ,0% 0%, 0% 100%);
+  clip-path:polygon(0 0,100% 0,0%,0% 100%);
+}    
+.TerceraLinea{
+  width: 87%;
+  clear: both;
+  text-align:center;
+  float:left;
+  margin:22px 1% 44px;
+  padding:10px 2% 15px;
+  position:relative;
+  background-color:rgba(0, 0, 0,0.8);
+  box-sizing:content-box;
+  height: 500px;
+  box-shadow:0 0 3px #000000;
+}
+
+ .TerceraLinea img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: fill;
+  -webkit-clip-path:polygon(0 0,100% 0 ,100% 100%, 0% 100%);
+  clip-path:polygon(0 0,100% 0,100%,0% 100%);
+  transition: 1s;
+}
+.TerceraLinea:hover img{
+  -webkit-clip-path:polygon(0 0,100% 0 ,0% 0%, 0% 100%);
+  clip-path:polygon(0 0,100% 0,0%,0% 100%);
+}
+/*Pie de pagina*/
+footer {
+  background: rgba(15, 15, 15, 0.8);
+  position: relative;
+  height: 120px;
+  width: 100%;
+  clear: both;
+}
+/*Posicion pie de pagina*/
+
+.icono-texto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icono-texto-icono {
+  float: left;
+  width: 20%;
+}
+.footer-nav a {
+  font-size: 110%;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Sofia', cursive;
+}
+/*menu inferior efecto*/
+.footer-nav a:hover {
+  color: #41a1b3;;
+}
+/*posicion menu inferior*/
+.footer-nav {
+  text-align: right;
+}
+
+.barra-social{
+  position: fixed;
+  right: 0;
+  top:35%;
+  font-size: 1,5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.icon{
+  color: #FFF;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+  z-index: 100;
+}
+
+.icon-facebook2 {
+  background: #1a2742;
+}
+.icon-twitter{
+  background: #005374;
+}
+.icon-youtube{
+  background: #721c1a;
+}
+.icon-instagram{
+  background: #254158;
+}
+.icon:hover{
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .42)
+}
+@media screen and (max-width: 950px) {
+
+  #menu-icono {
+      display: inline;
+      position: absolute; 
+      top: 20px; 
+      right:20px;
+      font-size: 40px;
+  }
+
+  nav:hover ul {
+      display: block;
+  }
+
+  nav ul,a:active ul {
+      display: none;
+      z-index: 1000;
+      position: absolute;
+      padding: 10px;
+      background: rgba(0, 0, 0,0.8);
+      border: 1px solid #a5bdcd;
+      right: 20px;
+      width: 30%;
+      font-size: 80%;
+  }
+  
+  #NombreLogo{
+      font-size: 140%;
+  }
+
+  .barra-social{
+    font-size: 10px;
+  }
+  #btntop{
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}

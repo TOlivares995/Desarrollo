@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BibliotecaVirtual</title>
+    <!-- Estilos-->
+    <link rel="stylesheet" href="CSS/EstilosContacto.css">
+    <!--Iconos de Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Tipos de Fuentes de Letras -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Playfair+Display|Sofia&display=swap" rel="stylesheet">
+    <!-- SCRIPTS -->
+    <script src="js/Validaciones.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    
+    
+</head>
+<body>
+  
+        <header>
+          <div>
+              <button id="btntop"><i class="fa fa-arrow-up"></i></i></button>
+            <a href="inicio.html" id="Logo"><img src="CSS/Imagenes/libro.png" alt="Logo-BibliotecaVirtual"></a>
+            <h3 id="NombreLogo">Biblioteca Virtual</h3>
+            <nav>
+              <a href="#" id="menu-icono">
+                <i class="fa fa-bars"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="inicio.html">
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="Populares.html">
+                    Populares
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Peticiones
+                  </a>
+                </li>
+                <li>
+                  <a href="Contacto.html">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      
+  
+       
+        <form class="Formulario" action="Contacto.html" method="post" onsubmit="return validar(this);">
+            <h1>Contacto</h1>
+            <input type="text" id="rut" name="rut" minlength="3" maxlength="12" placeholder="Rut *" required>
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="20" placeholder="Nombre *" required>
+            <input type="text" id="apellido" name="Apellido" minlength="3" maxlength="30" placeholder="Apellido *" required>
+            <input type="email" id="correo" name="correo" placeholder="E-mail *" required>
+            <input type="number" id="telefono" name="telefono" placeholder="Teléfono" step="1" required>
+            <textarea rows="3" cols="38" placeholder="Mensaje"></textarea>
+            <input  type="submit"  value="Contactar" class="boton">
+          </form>
+      
+  
+
+         <!-- FOOTER -->
+  <footer>
+   
+      <div class="icono-texto">
+        <div class="icono-texto-icono">
+          <ul class="footer-nav">
+            <li>
+              <a href="inicio.html">Inicio</a>
+          </li>
+          <li>
+              <a href="Populares.html">Populares</a>
+          </li>
+          <li>
+              <a href="Peticiones">Peticiones</a>
+          </li>
+          <li>
+              <a href="Contacto.html">Contacto</a>
+          </li>
+          </ul>
+        </div>
+        <div class="barra-social">
+          <a href="https://www.facebook.com/DuocUC/" class="icon icon-facebook2" target="blank"></a>
+          <a href="https://twitter.com/DuocUC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon icon-twitter" target="blank"></a>
+          <a href="https://www.youtube.com/user/DuocUCvideos" class="icon icon-youtube" target="blank"></a>
+          <a href="https://www.instagram.com/duocuc_cl/?hl=es" class="icon icon-instagram" target="blank"></a>
+         </div>
+      </div>
+  
+  
+  </footer>
+
+</body>
+</html>

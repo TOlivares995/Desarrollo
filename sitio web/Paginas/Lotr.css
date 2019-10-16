@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+/*Fondo*/
+body {
+  background-image: url(ImagenPagina/libreria.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  background-attachment: fixed; 
+  margin: 0 auto;
+
+}
+/*Flecha*/
+
+
+/*Parrafos*/
+p {
+  color: #ffffff;
+  font-size: 100%;
+  line-height: 155%;
+  text-indent: 2%;
+  text-align: justify;
+  font-family: 'Courgette', cursive;
+  margin-bottom: 10%;
+  margin-right: 10%;
+}
+/*Titulos*/
+h2 {
+  font-size: 135%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Sofia', cursive;
+}
+/*Titulos Secundarios*/
+h2{
+  font-family: 'Sofia', cursive;
+  font-size: 165%;
+}
+/*Links*/
+a {
+  color: #524c56;
+  text-decoration: none;
+  font-weight: bold;
+  transition:all 0.2s;
+}
+/*Efecto links*/
+a:hover {
+  color: #3a7999;
+}
+
+/*Espacio asignado al cuerpo*/
+#Contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Cabecera*/
+header {
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background: rgba(15, 15, 15, 0.8);
+}
+/*Logo*/
+header #Logo img {
+  margin: 20px;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+#NombreLogo {
+  float: left;
+  padding: 25px 20px 0 0;
+  color: #fff;
+  font-size: 170%;
+}
+
+/*Menu Superior*/
+nav {
+  float: right;
+  padding: 25px 20px 0px 0px;
+}
+
+#menu-icono {
+  display: none;
+  font-size: 50px;
+}
+/*Estilo menu*/
+ul {
+  list-style: none;
+}
+/*Estructura Menu superior*/
+nav ul li {
+  font-size: 150%;
+  display: inline-block;
+  padding: 10px;
+  font-family: 'Sofia', cursive;
+}
+
+/*Color del menu superior*/
+nav ul li a {
+  color: #ffffff;
+}
+
+/*Efecto Color del menu superior*/
+
+a:hover {
+  color: #41a1b3;
+}
+
+#container{
+  margin-bottom: 15px;
+}
+
+#imagen{
+  width: 30%;
+  height: 20px;
+  margin: 50px 0 0 100px;
+  position: relative;
+  }
+
+img{
+  height: 500px;
+  width: 100%;
+  float: left;
+
+}
+
+#datos{
+margin-left:525px;
+}
+
+p{
+  float: right;
+  color: #ffffff;
+  font-size: 150%;
+  line-height: 100%;
+  text-align: justify;
+  font-family: 'Courgette', cursive;
+  margin-top: 50px;
+}
+#datos a{
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+
+#datos a:hover{
+  color: #000;
+  background: #fff;
+}
+
+/*Pie de pagina*/
+footer {
+  background: rgba(15, 15, 15, 0.8);
+  position: relative;
+  height: 120px;
+  width: 100%;
+  clear: both;
+}
+/*Posicion pie de pagina*/
+
+.icono-texto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icono-texto-icono {
+  float: left;
+  width: 20%;
+}
+.footer-nav a {
+  font-size: 110%;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Sofia', cursive;
+}
+/*menu inferior efecto*/
+.footer-nav a:hover {
+  color: #41a1b3;;
+}
+/*posicion menu inferior*/
+.footer-nav {
+  text-align: right;
+}
+
+.barra-social{
+  position: fixed;
+  right: 0;
+  top:35%;
+  font-size: 1,5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.icon{
+  color: #FFF;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+  z-index: 100;
+}
+
+.icon-facebook2 {
+  background: #1a2742;
+}
+.icon-twitter{
+  background: #005374;
+}
+.icon-youtube{
+  background: #721c1a;
+}
+.icon-instagram{
+  background: #254158;
+}
+.icon:hover{
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .42)
+}
+
+
+@media screen and (max-width: 950px) {
+
+  #menu-icono {
+      display: inline;
+      position: absolute; 
+      top: 20px; 
+      right:20px;
+      font-size: 40px;
+  }
+
+  nav:hover ul {
+      display: block;
+  }
+
+  nav ul,a:active ul {
+      display: none;
+      z-index: 1000;
+      position: absolute;
+      padding: 10px;
+      background: rgba(0, 0, 0,0.8);
+      border: 1px solid #a5bdcd;
+      right: 20px;
+      width: 30%;
+      font-size: 80%;
+  }
+
+  #NombreLogo{
+      font-size: 140%;
+  }
+
+  .barra-social{
+    font-size: 10px;
+  }
+
+} 
