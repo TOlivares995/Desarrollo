@@ -17,7 +17,8 @@ body {
 /*Flecha*/
 
 #btntop{
-  position: fixed;
+border-radius: 1 rem;
+position: fixed;
 font-size: 30px;
 bottom: 120px;
 right: 0px;
@@ -30,13 +31,6 @@ cursor: pointer;
 display: none;
 z-index: 1;
 }
-#btntop :hover{
-  color: #255784;
-  background: #2196f3;
-box-shadow: 0 0 20px #2196f3, 0 0 25px #2196f3, 0 0 30px #2196f3;
-
-}
-
 
 /*Parrafos*/
 p {
@@ -348,7 +342,6 @@ footer {
 
 .icon-facebook2 {
   background: #1a2742;
-  border-radius: 1rem;
 }
 .icon-twitter{
   background: #005374;
@@ -358,7 +351,6 @@ footer {
 }
 .icon-instagram{
   background: #254158;
-  border-radius: 1rem;
 }
 .icon:hover{
   padding-right: 3rem;
