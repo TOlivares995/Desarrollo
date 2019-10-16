@@ -126,11 +126,6 @@ nav ul li a {
   color: #ffffff;
 }
 
-/*Efecto Color del menu superior*/
-
-a:hover {
-  color: #41a1b3;
-}
 /*Contenedor slider*/
 .slider {
  width: 95%;
