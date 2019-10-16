@@ -1,0 +1,291 @@
+/*Fondo*/
+body{
+    background: #3399FF;
+}
+
+/*Fondo cajas*/
+.fondo{
+    background: #1A5276;
+}
+
+/*Imagen de fondo*/
+.imgfondo{
+    background-image: url(http://www.baltana.com/files/wallpapers-16/Numbers-Background-Wallpaper-41922.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Borde*/
+#inicio{
+    background: #FFFFFF;
+    border: 1rem solid #1A5276;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+/*Titulo Pagina*/
+#titulopag{
+    text-align: center;
+    color: #ffffff;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Titulos Lista*/
+.listatit
+{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Texto Lista*/
+.listatext{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Aside*/
+#aside{
+    border-top: 2px solid #000000;
+    margin-left: -1.25%;
+    width: 102.5%;
+}
+
+/*Contenedor nav*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1A5276;
+}
+
+/*Barra nav*/
+.whitebar{
+    float: left;
+}
+/*navigator*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*lista navigator*/
+li {
+    float: left;
+}
+/*Boton*/
+.active {
+    background-color: #FFFFFF;
+    color: #1A5276;
+}
+
+/*Titulo Inicio*/
+.tituloin{
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color:  #1A5276;
+}
+
+/*Texto Profesora*/
+#textoprof{
+    text-align: justify;
+    float: left;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+/*Profesora*/
+#profesora{
+    width: 75%;
+    text-align:right;
+    float: left;
+    margin-left: 3rem;
+  }
+
+/*Texto Normal*/
+.textonorm{
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+/*Foto Aside*/
+#matematicas{
+    margin-top: 5rem;
+}
+
+/*Foto Sombrero*/
+.fotosom{
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+/*Fotos Extra*/
+.fotosex{
+    margin-top: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Titulos Extra*/
+.titulosex{
+    color: #FFFFFF;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*Texto extra*/
+.textoex{
+    text-align: justify;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/*Fotos centradas**** con la fotocen de abajo queda mejor centrado*/
+.fotoscen{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+/*Fotos centradas figura geometrica y fotos*/
+.fotocen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width100{
+    width: 100%;
+    height: auto;
+}
+
+.width90{
+    width: 90%;
+    height: auto;
+}
+
+.width80{
+    width: 80%;
+    height: auto;
+}
+
+.width60{
+    width: 60%;
+    height: auto;
+}
+
+.width50{
+    width: 50%;
+    height: auto;
+}
+
+.width45{
+    width: 45%;
+    height: auto;
+}
+
+.width40{
+    width: 40%;
+    height: auto;
+}
+
+.width25{
+    width: 25%;
+    height: auto;
+}
+
+#reloj{
+    width: 41%;
+    height: auto;
+}
+
+#gorro{
+    width: 39.5%;
+    height: auto;
+}
+
+#planeta{
+    width: 16%;
+    height: auto;
+}
+
+
+
+
+
+/*Slider*/
+#slider{
+    box-sizing:border-box
+}
+
+/* Contenido del slider */
+.slide-contenedor {
+    border: 0.2rem solid #f2f2f2;
+    max-width: 82rem;
+    position: relative;
+    margin: auto;
+}
+
+/* Esconder imagenes por default */
+.mySlides {
+    display: none;
+}
+
+/* Botones atras y adelante */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* mover boton a la derecha */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* Color al boton seleccionado */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Animacion Fade */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

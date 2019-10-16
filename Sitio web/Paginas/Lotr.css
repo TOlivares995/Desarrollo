@@ -155,13 +155,14 @@ p{
   color: #fff;
   transition: 0.5s;
   margin-left: 250px;
-  
+  margin-bottom: 50px;
 }
 
 #datos a:hover{
   color: #000;
   background: #fff;
 }
+
 /*Pie de pagina*/
 footer {
   background: rgba(15, 15, 15, 0.8);
