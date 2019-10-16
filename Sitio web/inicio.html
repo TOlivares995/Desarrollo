@@ -8,24 +8,31 @@
     <!-- Estilos-->
     <link rel="stylesheet" href="CSS/EstilosInicio.css">
     <!--Iconos de Font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font.css">
     <!--Tipos de Fuentes de Letras -->
     <link href="https://fonts.googleapis.com/css?family=Courgette|Playfair+Display|Sofia&display=swap" rel="stylesheet">
     <!--Script Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
     <link rel="stylesheet" href="css/FlexBox/flexboxgrid.min.css">
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
 </head>
+ <!--Chao -->
+
 <!--hola mundo -->
 <body>
+    
     <div>
+        <button id="btntop"><i class="fa fa-arrow-up"></i></i></button>
       <header>
         <div>
           <a href="inicio.html" id="Logo"><img src="CSS/Imagenes/libro.png" alt="Logo-BibliotecaVirtual"></a>
           <h3 id="NombreLogo">Biblioteca Virtual</h3>
           <nav>
-            <a href="#" id="menu-icono">
+            <a href="Populares.html" id="menu-icono">
               <i class="fa fa-bars"></i>
             </a>
             <ul>
@@ -54,79 +61,108 @@
         </div>
       </header>
       <!-- SLIDER -->
+      <div id="Contenedor">
         <div class="slider">
-          <ul class="slider1">
-            <li><img src="CSS/Imagenes/LotrSlider.jfif" alt=""></li>
-                        <li><img src="CSS/Imagenes/MetroSlider.png" alt="Metro"></li>
-                        <li><img src="CSS/Imagenes/HarryPotterSlider.jpg" alt="harry"></li>
-                        <li><img src="CSS/Imagenes/DonQuijoteSlider.jpg" alt="Quijote"></li>
-                        <li><img src="CSS/Imagenes/SabiduriaLobosSlider.jpg" alt="Lobos"></li>
-                        <li><img src="CSS/Imagenes/GuerraMundosSlider.jpg" alt="guerra"></li>
+          <ul>
+                <li><img src="CSS/Imagenes/LotrSlider.jfif" alt="Lotr"></li>
+                <li><img src="CSS/Imagenes/MetroSlider.png" alt="Metro"></li>
+                <li><img src="CSS/Imagenes/HarryPotterSlider.jpg" alt="harry"></li>
+                <li><img src="CSS/Imagenes/DonQuijoteSlider.jpg" alt="Quijote"></li>
+                <li><img src="CSS/Imagenes/SabiduriaLobosSlider.jpg" alt="Lobos"></li>
+                <li><img src="CSS/Imagenes/GuerraMundosSlider.jpg" alt="guerra"></li>
           </ul>
+          
         </div>
-    </div>
+      </div>
+      
+    
     <div id="Contenedor">
+       
     <!-- INFO THUMBNAILS -->
     <div class="Populares">
       <h2>Populares</h2><br>
           <div class="row">
               <div class="col-xs-12 col-sm-6  col-lg-4">   
                   <div class="PrimeraLinea">
+                    <div class="Contenido">
                       <h3>Harry Potter</h3>
-                      <img src="CSS/Imagenes/HarryPotter.jpg" alt="harry">
+                      
                       <p>Harry Potter es una serie de novelas fantásticas escrita por la autora 
                           británica J. K. Rowling, en la que se describen las aventuras del joven
                           aprendiz de magia y hechicería Harry Potter y sus amigos Hermione 
                           Granger y Ron Weasley, durante los
                           años que pasan en el Colegio Hogwarts de Magia y Hechicería.</p>
+                          <a href="">Descargar</a>
                   </div>
+                  <img src="CSS/Imagenes/HarryPotter.jpg" alt="harry">
+                </div>
+               
               </div>
               <div class="col-xs-12 col-sm-6 col-lg-4">
                   <div class="SegundaLinea">
+                      <div class="Contenido">
                       <h3>Metro 2033</h3>
-                      <img src="CSS/Imagenes/Metro.jpg" alt="Metro">
+                     
                       <p>Metro 2033 es una novela de ficción post-apocalíptica de 2002 del 
                           autor ruso Dmitry Glukhovsky. Está ubicado dentro del Metro de
                           Moscú, donde los últimos sobrevivientes se esconden después de 
                           un holocausto nuclear global.</p>
+                          <a href="">Descargar</a>
                   </div>
+                  <img src="CSS/Imagenes/Metro.jpg" alt="Metro">
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6  col-lg-4">
                   <div class="TerceraLinea">
+                      <div class="Contenido">
                       <h3>El Señor de los Anillos</h3>
-                      <img src="CSS/Imagenes/LOTR.jpg" alt="Lotr">
+                     
                       <p>El Señor de los Anillos es una novela de fantasía épica escrita
                           por el filólogo y escritor británico J. R. R. Tolkien.</p>
+                          <a href="">Descargar</a>
                   </div>
+                  <img src="CSS/Imagenes/LOTR.jpg" alt="Lotr">
               </div>
-
+            </div>
               <div class="col-xs-12 col-sm-6 col-lg-4">
                   <div class="PrimeraLinea">
+                      <div class="Contenido">
                       <h3>Don Quijote de la Mancha</h3>
-                      <img src="CSS/Imagenes/quijote.jpg" alt="Quijote">
+                      
                       <p>Alonso Quijano es un hidalgo pobre de la Mancha, que de tanto 
                           leer novelas de caballería acaba enloqueciendo y creyendo ser 
                           un caballero andante, nombrándose a sí mismo como Don Quijote de la Mancha.</p>
+                          <a href="">Descargar</a>
                   </div>
+                  <img src="CSS/Imagenes/quijote.jpg" alt="Quijote">
               </div>
+            </div>
               <div class="col-xs-12 col-sm-6 col-lg-4">
                   <div class="SegundaLinea">
+                      <div class="Contenido">
                       <h3>La sabiduría de los lobos</h3>
-                      <img src="CSS/Imagenes/Lobos.jpg" alt="Lobos">
+                     
                       <p>Un estimulante libro sobre la sabiduría de los lobos y el poder
                           de la naturaleza. Por su comportamiento social, no hay ningún 
                           animal tan parecido al hombre como el lobo.</p>
+                          <a href="">Descargar</a>
                   </div>
+                  <img src="CSS/Imagenes/Lobos.jpg" alt="Lobos">
               </div>
+            </div>
               <div class="col-xs-12 col-sm-6 col-lg-4">
                   <div class="TerceraLinea">
+                      <div class="Contenido">
                       <h3>La Guerra de los mundos</h3>
-                      <img src="CSS/Imagenes/Guerra.jpg" alt="Guerra">
+                      
                       <p> La guerra de los mundos es un libro escrito 
                           por H.G. Wells en 1898, la historia trata sobre el ataque que 
                           realizan los marcianos a la tierra.</p>
+                          <a href="">Descargar</a>
                   </div>
+                  <img src="CSS/Imagenes/Guerra.jpg" alt="Guerra">
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -151,40 +187,18 @@
           </li>
           </ul>
         </div>
-        <div class="icono-texto-texto">
-          <ul class="social">
-            <li>
-              <a href="http://www.duoc.cl/inicio" target="_blank">
-                  <i class="fa fa-envelope-o"></i>
-              </a>
-          </li>
-          <li>
-              <a href="https://www.facebook.com/DuocUC/" target="_blank">
-                  <i class="fa fa-facebook"></i>
-              </a>
-          </li>
-          <li>
-              <a href="https://twitter.com/DuocUC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                  <i class="fa fa-twitter"></i>
-              </a>
-          </li>
-          <li>
-              <a href="https://www.youtube.com/user/DuocUCvideos" target="_blank">
-                  <i class="fa fa-youtube"></i>
-              </a>
-          </li>
-          <li>
-              <a href="https://www.instagram.com/duocuc_cl/?hl=es">
-                  <i class="fa fa-instagram"></i>
-              </a>
-          </li>
-          </ul>
-        </div>
+       <div class="barra-social">
+        <a href="https://www.facebook.com/DuocUC/" class="icon icon-facebook2" target="blank"></a>
+        <a href="https://twitter.com/DuocUC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon icon-twitter" target="blank"></a>
+        <a href="https://www.youtube.com/user/DuocUCvideos" class="icon icon-youtube" target="blank"></a>
+        <a href="https://www.instagram.com/duocuc_cl/?hl=es" class="icon icon-instagram" target="blank"></a>
+       </div>
+        
       </div>
   
  
   </footer>
-  <!-- SCRIPTS -->
+  <!-- SCRIPTS-->
   <script src="js/script.js"></script>
 </body>
 </html>
