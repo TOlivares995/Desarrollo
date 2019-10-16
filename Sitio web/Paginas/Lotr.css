@@ -7,7 +7,7 @@
   }
   /*Fondo*/
   body {
-    background-image: url(imagenes/libreria.jpg);
+    background-image: url(ImagenesPagina/libreria.jpg);
     background-repeat: no-repeat; 
     background-size: 100% 100%;
     background-attachment: fixed; 
@@ -164,7 +164,76 @@
     margin-top: 50px;
   }
   
+/*Pie de pagina*/
+footer {
+  background: rgba(15, 15, 15, 0.8);
+  position: relative;
+  height: 120px;
+  width: 100%;
+  clear: both;
+}
+/*Posicion pie de pagina*/
 
+.icono-texto {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icono-texto-icono {
+  float: left;
+  width: 20%;
+}
+.footer-nav a {
+  font-size: 110%;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Sofia', cursive;
+}
+/*menu inferior efecto*/
+.footer-nav a:hover {
+  color: #41a1b3;;
+}
+/*posicion menu inferior*/
+.footer-nav {
+  text-align: right;
+}
+
+.barra-social{
+  position: fixed;
+  right: 0;
+  top:35%;
+  font-size: 1,5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+.icon{
+  color: #FFF;
+  text-decoration: none;
+  padding: .7rem;
+  display: flex;
+  transition: all .5s;
+  z-index: 100;
+}
+
+.icon-facebook2 {
+  background: #1a2742;
+}
+.icon-twitter{
+  background: #005374;
+}
+.icon-youtube{
+  background: #721c1a;
+}
+.icon-instagram{
+  background: #254158;
+}
+.icon:hover{
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .42)
+}
 
   @media screen and (max-width: 950px) {
 

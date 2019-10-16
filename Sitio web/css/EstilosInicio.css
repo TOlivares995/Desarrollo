@@ -348,7 +348,7 @@ footer {
 
 .icon-facebook2 {
   background: #1a2742;
-  border-radius: 1rem;
+  
 }
 .icon-twitter{
   background: #005374;
@@ -358,7 +358,6 @@ footer {
 }
 .icon-instagram{
   background: #254158;
-  border-radius: 1rem;
 }
 .icon:hover{
   padding-right: 3rem;
