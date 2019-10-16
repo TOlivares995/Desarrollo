@@ -17,8 +17,7 @@ body {
 /*Flecha*/
 
 #btntop{
-border-radius: 1 rem;
-position: fixed;
+  position: fixed;
 font-size: 30px;
 bottom: 120px;
 right: 0px;
@@ -31,6 +30,13 @@ cursor: pointer;
 display: none;
 z-index: 1;
 }
+#btntop :hover{
+  color: #255784;
+  background: #2196f3;
+box-shadow: 0 0 20px #2196f3, 0 0 25px #2196f3, 0 0 30px #2196f3;
+
+}
+
 
 /*Parrafos*/
 p {
@@ -126,6 +132,11 @@ nav ul li a {
   color: #ffffff;
 }
 
+/*Efecto Color del menu superior*/
+
+a:hover {
+  color: #41a1b3;
+}
 /*Contenedor slider*/
 .slider {
  width: 95%;
@@ -337,6 +348,7 @@ footer {
 
 .icon-facebook2 {
   background: #1a2742;
+  
 }
 .icon-twitter{
   background: #005374;
